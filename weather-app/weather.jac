@@ -61,9 +61,9 @@ can weather_question_answer(question: str) -> tuple {
     return (weather_info, answer_weather_question(question, weather_info));
 }
 
-# with entry {
-#     question = "I am going to Colombo tommorow for 4 days. Do I need to carry an umbrella?";
-#     (weather_info, answer) = weather_question_answer(question);
-#     print("Weather Information", weather_info);
-#     print("Answer", answer);
-# }
+with entry: __main__ {
+    question = "I am going to Colombo tommorow for 4 days. Do I need to carry an umbrella?";
+    (weather_info, answer) = weather_question_answer(question);
+    print("Weather Information", weather_info);
+    print("Answer", answer);
+}
