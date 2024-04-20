@@ -47,7 +47,7 @@ Before running the application, make sure you have the following:
 
 To run the application, use the following commands:
 
-- To retrieve weather data:
+- To run the example:
 
   ```shell
   jac run weather.jac
