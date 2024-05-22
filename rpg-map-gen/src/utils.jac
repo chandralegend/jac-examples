@@ -1,5 +1,5 @@
-'''Getting the Map View'''
-can get_map_view(map: Map) -> str {
+'''Get the map of the level'''
+can get_map(map: Map) -> str {
     map_tiles = [['.' for _ in range(map.level.width)] for _ in range(map.level.height)];
     for wall in map.walls {
         for x in range(wall.start_pos.x, wall.end_pos.x + 1) {
@@ -17,5 +17,5 @@ can get_map_view(map: Map) -> str {
     map_tiles[map.player_pos.y][map.player_pos.x] = 'P';
     map_tiles = [['B'] + row + ['B'] for row in map_tiles];
     map_tiles = [['B' for _ in range(map.level.width + 2)]] + map_tiles + [['B' for _ in range(map.level.width + 2)]];
-    return '\n'.join([''.join(row) for row in map_tiles]);
+    return [''.join(row) for row in map_tiles];
 }

@@ -37,8 +37,7 @@ Level {
         n_retries_allowed: 'Number of Retries Allowed': int;
 }
 
-obj 'Game'
-Game {
+obj LevelManager {
     has current_level: int = 0,
         current_difficulty: int = 1,
         prev_levels: list[Level] = [],
