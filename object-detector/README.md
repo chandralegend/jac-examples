@@ -3,6 +3,6 @@ Assume that you have a Intruder Detection Syste (IDS) connected to your camera f
 
 ### Todo
 - [X] Create a README
-- [ ] Create an example IDS using YOLO
+- [X] Create an example IDS using YOLO
 - [ ] Create an Middleware
 - [ ] Create a simple User Interface using NiceGUI

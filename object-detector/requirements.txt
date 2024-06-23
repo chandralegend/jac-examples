@@ -1,3 +1,4 @@
 jaclang
 mtllm[image, video]
 nicegui
+ultralytics
