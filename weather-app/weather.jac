@@ -1,10 +1,10 @@
 import:py requests;
 import:py json;
 import:py os;
-import:py from jaclang.core.llms, Anthropic;
+import:py from mtllm.llms, Anthropic;
 
 glob WEATHER_API_BASE_URL: str = "http://api.weatherapi.com/v1";
-glob WEATHER_API_KEY: str = os.getenv("WEATHER_API_KEY", "");
+glob WEATHER_API_KEY: str = os.getenv("WEATHER_API_KEY");
 
 can get_current_weather(city: str) -> str {
     url = f"{WEATHER_API_BASE_URL}/current.json?q={city}&key={WEATHER_API_KEY}";
