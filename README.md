@@ -17,4 +17,9 @@ Feel free to explore the examples and dive into the world of Jaclang programming
 
 We welcome contributions from the community to make the Jaclang Examples repository even better. If you have an example you'd like to share or an improvement to an existing example, please submit a pull request. Together, we can continue to build a vibrant and thriving Jac community.
 
+To create a new example,
+```bash
+sh new.sh
+```
+
 Happy coding in Jaclang!
